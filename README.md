@@ -1,3 +1,13 @@
+Building a custom image
+
+- Fork Superset
+- Do the changes as required
+- Update scripts/build-docker.py with the REPO where you want to push image
+- Add DOCKERHUB_TOKEN and DOCKERHUB_USER to GHA Secrets
+- Make a release on Github (image is automatically built and pushed to dockerhub)
+- Update the superset image in deployment files and redeploy
+
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one
 or more contributor license agreements.  See the NOTICE file
